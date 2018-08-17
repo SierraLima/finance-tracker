@@ -25,3 +25,9 @@ $(document).ready(function(){
     $('#results').html(data.responseText)
   })
 })
+
+$(document).ready(function(){
+  $('#friend-lookup-form').on('ajax:complete', function(event, data, status){
+    $('#results').html(data.responseText)
+  })
+})
